@@ -1,0 +1,226 @@
+/* Base */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f6fb;
+    color: #1f2937;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: min(1000px, 92%);
+    margin: 50px auto;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* En-tête */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Carte */
+
+.card {
+    padding: 28px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 4%);
+}
+
+.form-card {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Tableau */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 15px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    background: #f9fafb;
+    color: #4b5563;
+    font-size: 13px;
+}
+
+tbody tr:hover {
+    background: #f9fafb;
+}
+
+/* Boutons */
+
+.btn {
+    display: inline-block;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background: #4f46e5;
+}
+
+.btn-primary:hover {
+    background: #4338ca;
+}
+
+.btn-secondary {
+    color: #374151;
+    background: #e5e7eb;
+}
+
+.btn-secondary:hover {
+    background: #d1d5db;
+}
+
+.btn-edit {
+    color: #3730a3;
+    background: #e0e7ff;
+}
+
+.btn-edit:hover {
+    background: #c7d2fe;
+}
+
+.btn-delete {
+    color: #b91c1c;
+    background: #fee2e2;
+}
+
+.btn-delete:hover {
+    background: #fecaca;
+}
+
+/* Actions du tableau */
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.actions form {
+    margin: 0;
+}
+
+/* Formulaires */
+
+form label {
+    display: block;
+    margin: 18px 0 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    background: #ffffff;
+    font: inherit;
+}
+
+form input:focus {
+    border-color: #4f46e5;
+    outline: 2px solid #e0e7ff;
+}
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+/* Messages */
+
+.empty {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.error {
+    padding: 12px;
+    border-radius: 7px;
+    color: #991b1b;
+    background: #fee2e2;
+}
+
+/* Pied de page */
+
+.footer {
+    margin-top: 30px;
+    color: #9ca3af;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Adaptation aux petits écrans */
+
+@media (max-width: 650px) {
+    .container {
+        margin: 25px auto;
+    }
+
+    .header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
